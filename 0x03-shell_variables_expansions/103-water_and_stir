@@ -1,0 +1,2 @@
+#!/bin/bash
+printf result=$((water_value + stir_value))
