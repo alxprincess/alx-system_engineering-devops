@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # For web-01
 ssh ubuntu@web-01
 mysql -uroot -p
