@@ -1,0 +1,21 @@
+# For web-01
+ssh ubuntu@web-01
+mysql -uroot -p
+# Enter MySQL root password
+
+CREATE USER 'holberton_user'@'localhost' IDENTIFIED BY 'projectcorrection280hbtn';
+GRANT REPLICATION CLIENT ON *.* TO 'holberton_user'@'localhost';
+
+SHOW GRANTS FOR 'holberton_user'@'localhost';
+exit
+
+# For web-02
+ssh ubuntu@web-02
+mysql -uroot -p
+# Enter MySQL root password
+
+CREATE USER 'holberton_user'@'localhost' IDENTIFIED BY 'projectcorrection280hbtn';
+GRANT REPLICATION CLIENT ON *.* TO 'holberton_user'@'localhost';
+
+SHOW GRANTS FOR 'holberton_user'@'localhost';
+exit
